@@ -37,16 +37,22 @@
   }
 }
 
-/* caliportfolio\src\App.css */
-
 /* Navbar styling */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #1d3557;
+  background-color:  #457b9d; /* Default background color */
   z-index: 1000;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+}
+
+.navbar.mobile-open {
+  background-color: #457b9d; /* Background color when menu is open on mobile */
 }
 
 .nav-links {
@@ -94,13 +100,63 @@
   width: 100%;
   left: 0;
 }
+
+/* Hamburger icon styling */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 20px;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  top: -10px;
+}
+
+.hamburger::after {
+  top: 10px;
+}
+
+/* Mobile menu display */
+.nav-links.mobile-show {
+  display: flex;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .nav-links {
+    display: none; /* Hide navigation links by default on mobile */
     flex-direction: column;
     text-align: center;
-    background-color: #1d3557;
+    background-color: #457b9d;
     padding: 0;
+    position: absolute;
+    top: 60px; /* Adjust this value to align with the navbar height */
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  .nav-links.mobile-show {
+    display: flex; /* Show navigation links when menu is open */
+    opacity: 1;
+    transform: translateY(5);
   }
 
   .nav-links li {
@@ -111,5 +167,8 @@
     font-size: 1.2rem;
     padding: 15px;
   }
-}
 
+  .menu-icon {
+    display: block; /* Show menu icon on mobile */
+  }
+}
