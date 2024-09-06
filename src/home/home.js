@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import markImage from './images/mark.jpg'; // Adjust the path as needed
 
 const Home = () => {
@@ -21,13 +22,31 @@ const Home = () => {
         onMouseLeave={handleMouseLeave}> 
         Mark Antony Calipayan
         </h1>
-        <p style={styles.description}>
-          A self-sufficient and flexible computer engineer. Equipped with an intermediate experience in 
-          various skills in technology-based fields such as UX/UI Design, Embedded System/IoT, Predictive and Data Analytics, Mobile, and Web Development.
-        </p>
+        <TypeAnimation
+          sequence={[
+            'A self-sufficient and flexible computer engineer.', // Types 'One'
+            1000, // Waits 1s
+            'Equipped with skills in UX/UI Design, Embedded System/IoT, Predictive and Data Analytics, Mobile, and Web Development.', // Deletes 'One' and types 'Two'
+            2000, // Waits 2s
+            () => {
+              console.log('Sequence completed');
+            },
+          ]}
+          wrapper="span"
+          cursor={true}
+          repeat={Infinity}
+          style={{ fontSize: '2em', color : '#a8dadc', display: 'inline-block' }}
+        />
         <a href="#project" style={styles.button}
-          onMouseOver={e => e.target.style.backgroundColor = '#457b9d'}
-          onMouseOut={e => e.target.style.backgroundColor = '#1d3557'}>
+          onMouseOver={ e => {
+            e.target.style.backgroundColor = '#1d3557';
+            e.target.style.color = '#fff';
+          }}
+          onMouseOut={ e => {
+            e.target.style.backgroundColor = '#fff';
+            e.target.style.color = '#1d3557';
+          }}
+          >
           View My Projects
         </a>
       </div>
