@@ -79,7 +79,7 @@ const SkillsGrid = () => {
         {skillsData.map((skill, index) => (
           <div
             key={index}
-            className="tile"
+            className={`tile ${hoverIndex === index ? 'hovered' : ''}`}
             style={styles.tile}
             onMouseEnter={() => handleMouseEnter(index)}
             onMouseLeave={handleMouseLeave}
@@ -100,7 +100,6 @@ const SkillsGrid = () => {
                     </li>
                   ))}
                 </ul>
-                {/* "Projects" Button */}
                 <a href={skill.link} style={styles.projectButton}>
                   View Projects
                 </a>
@@ -109,6 +108,32 @@ const SkillsGrid = () => {
           </div>
         ))}
       </div>
+      <style jsx>{`
+        @keyframes float {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+
+        .tile {
+          animation: float 3s ease-in-out infinite;
+        }
+
+        .hovered .hoverOverlay {
+          opacity: 1;
+        }
+
+        .hoverOverlay {
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+      `}</style>
     </div>
   );
 };
