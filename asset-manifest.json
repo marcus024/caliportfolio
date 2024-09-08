@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/caliportfolio/static/css/main.be537fdd.css",
+    "main.js": "/caliportfolio/static/js/main.461299c6.js",
+    "static/js/453.dc892088.chunk.js": "/caliportfolio/static/js/453.dc892088.chunk.js",
+    "static/media/mobile.png": "/caliportfolio/static/media/mobile.f040fda40464f282c44e.png",
+    "static/media/data.png": "/caliportfolio/static/media/data.480b28ce918fa0439997.png",
+    "static/media/web.png": "/caliportfolio/static/media/web.7bb5ca1ed7ec819f0d31.png",
+    "static/media/UI.png": "/caliportfolio/static/media/UI.c17b27f6a7808a19d7b0.png",
+    "static/media/AI.png": "/caliportfolio/static/media/AI.32c00602f16166c679e0.png",
+    "static/media/mark.jpg": "/caliportfolio/static/media/mark.52c824d47ef662c35067.jpg",
+    "index.html": "/caliportfolio/index.html",
+    "main.be537fdd.css.map": "/caliportfolio/static/css/main.be537fdd.css.map",
+    "main.461299c6.js.map": "/caliportfolio/static/js/main.461299c6.js.map",
+    "453.dc892088.chunk.js.map": "/caliportfolio/static/js/453.dc892088.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be537fdd.css",
+    "static/js/main.461299c6.js"
+  ]
+}
