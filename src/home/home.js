@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import markImage from './images/mark.jpg'; // Adjust the path as needed
+import fbIcon from './images/facebook.png'; // Your custom FB icon
+import gmailIcon from './images/new.png'; // Your custom Gmail icon
+import whatsappIcon from './images/whatsapp.png'; // Your custom WhatsApp icon
+import linkedinIcon from './images/linkedin.png'; // Your custom LinkedIn icon
 
 const Home = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -20,7 +24,6 @@ const Home = () => {
 
   return (
     <div id="home" style={styles.homeContainer}>
-      <div style={styles.sticker}>g</div> {/* Floating sticker */}
       <img 
         src={markImage}
         alt="Mark Antony Calipayan" 
@@ -28,6 +31,23 @@ const Home = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave} 
       />
+      
+      {/* Move the Social Icons section right after the image */}
+      <div style={styles.socialIcons}>
+        <a href="https://www.facebook.com/marcus03242001/" target="_blank" rel="noopener noreferrer">
+          <img src={fbIcon} alt="Facebook" style={styles.icon} />
+        </a>
+        <a href="mailto:markantonyvc0gmail.com">
+          <img src={gmailIcon} alt="Gmail" style={styles.icon} />
+        </a>
+        <a href="https://www.linkedin.com/in/calipayanmav24/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinIcon} alt="LinkedIn" style={styles.icon} />
+        </a>
+        <a href="https://wa.me/9460822777" target="_blank" rel="noopener noreferrer">
+          <img src={whatsappIcon} alt="WhatsApp" style={styles.icon} />
+        </a>
+      </div>
+
       <h1 
         style={isHovered ? { ...styles.name, ...styles.nameHovered } : styles.name}
         onMouseEnter={handleMouseEnter}
@@ -35,6 +55,7 @@ const Home = () => {
       >
         Mark Antony Calipayan
       </h1>
+
       <TypeAnimation
         sequence={[
           'A self-sufficient and flexible computer engineer.', // Types 'One'
@@ -50,6 +71,7 @@ const Home = () => {
         repeat={Infinity}
         style={{ fontSize: '2em', color: '#a8dadc', display: 'inline-block' }}
       />
+
       <button
         style={styles.button}
         onMouseOver={e => {
@@ -83,7 +105,7 @@ const styles = {
     width: '160px', 
     height: '160px', 
     borderRadius: '50%', 
-    marginBottom: '20px',
+    marginBottom: '10px', // Reduced margin to bring social icons closer to the image
     color: '#1d3557',
     border: '2px solid #a8dadc'
   },
@@ -91,7 +113,7 @@ const styles = {
     width: '160px', 
     height: '160px', 
     borderRadius: '50%', 
-    marginBottom: '20px',
+    marginBottom: '10px', 
     color: '#1d3557',
     border: '6px solid #a8dadc'
   },
@@ -99,17 +121,11 @@ const styles = {
     fontSize: '3rem', 
     color: 'white',
     transition: 'transform 0.3s ease, color 0.3s ease', 
+    marginTop: '20px', // Added margin to create space between icons and name
   },
   nameHovered: {
-    transform: 'scale(1.1)', // Slightly enlarges the text
-    color: '#a8dadc', // Change text color on hover
-  },
-  description: {
-    fontSize: '1.5rem', 
-    color: 'white', 
-    maxWidth: '800px', 
-    margin: '20px auto',
-    padding: '0 20px' // Adds padding for mobile view
+    transform: 'scale(1.1)', 
+    color: '#a8dadc', 
   },
   button: {
     display: 'inline-block', 
@@ -124,13 +140,17 @@ const styles = {
     cursor: 'pointer',
     border: 'none'
   },
-  sticker: {
-    fontSize: '2rem', // Size of the sticker
-    position: 'absolute',
-    top: '20px', // Position of the sticker
-    right: '20px',
-    animation: 'float 3s ease-in-out infinite' // Animation for the floating effect
-  }
+  socialIcons: {
+    display: 'flex',
+    gap: '20px',
+    marginTop: '10px', // Adjust margin between icons and image
+  },
+  icon: {
+    width: '40px', 
+    height: '40px', 
+    cursor: 'pointer',
+    transition: 'transform 0.3s ease',
+  },
 };
 
 export default Home;
