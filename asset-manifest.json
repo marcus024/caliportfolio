@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/caliportfolio/static/css/main.be537fdd.css",
-    "main.js": "/caliportfolio/static/js/main.75e703a7.js",
+    "main.js": "/caliportfolio/static/js/main.cbe3fbca.js",
     "static/js/453.dc892088.chunk.js": "/caliportfolio/static/js/453.dc892088.chunk.js",
     "static/media/mobile.png": "/caliportfolio/static/media/mobile.f040fda40464f282c44e.png",
     "static/media/data.png": "/caliportfolio/static/media/data.480b28ce918fa0439997.png",
@@ -24,11 +24,11 @@
     "static/media/linkedin.png": "/caliportfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/caliportfolio/index.html",
     "main.be537fdd.css.map": "/caliportfolio/static/css/main.be537fdd.css.map",
-    "main.75e703a7.js.map": "/caliportfolio/static/js/main.75e703a7.js.map",
+    "main.cbe3fbca.js.map": "/caliportfolio/static/js/main.cbe3fbca.js.map",
     "453.dc892088.chunk.js.map": "/caliportfolio/static/js/453.dc892088.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.be537fdd.css",
-    "static/js/main.75e703a7.js"
+    "static/js/main.cbe3fbca.js"
   ]
 }
