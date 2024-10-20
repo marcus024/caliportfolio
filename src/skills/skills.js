@@ -14,7 +14,6 @@ const skillsData = [
       { name: 'Firebase', img: mobile },
     ],
     img: mobile,
-    link: '#projects',
   },
   {
     title: 'Web Development',
@@ -26,7 +25,6 @@ const skillsData = [
       { name: 'Cpanel', img: web },
     ],
     img: web,
-    link: '#projects',
   },
   {
     title: 'AI and Data Analytics',
@@ -38,7 +36,6 @@ const skillsData = [
       { name: 'Google Sheets', img: ai },
     ],
     img: ai,
-    link: '#projects',
   },
   {
     title: 'Embedded Systems',
@@ -48,7 +45,6 @@ const skillsData = [
       { name: 'TinkerCAD', img: embed },
     ],
     img: embed,
-    link: '#projects',
   },
   {
     title: 'UI/UX Design',
@@ -57,7 +53,6 @@ const skillsData = [
       { name: 'Adobe XD', img: ui },
     ],
     img: ui,
-    link: '#projects',
   },
 ];
 
