@@ -100,9 +100,6 @@ const SkillsGrid = () => {
                     </li>
                   ))}
                 </ul>
-                <a href={skill.link} style={styles.projectButton}>
-                  View Projects
-                </a>
               </div>
             )}
           </div>
