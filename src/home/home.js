@@ -58,10 +58,12 @@ const Home = () => {
 
       <TypeAnimation
         sequence={[
-          'A self-sufficient and flexible computer engineer.', // Types 'One'
+          'A self-sufficient and flexible freelancer', // Types 'One'
           1000, // Waits 1s
-          'Equipped with skills in UX/UI Design, Embedded System/IoT, Predictive and Data Analytics, Mobile, and Web Development.', // Deletes 'One' and types 'Two'
+          'Equipped with skills in UX/UI Design, Embedded System/IoT, Predictive and Data Analytics, Mobile, and Web Development.', 
           2000, // Waits 2s
+          'Feel free to email me or message me using the contacts above for bookings or job offers.',
+          2000,
           () => {
             console.log('Sequence completed');
           },
