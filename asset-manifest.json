@@ -1,34 +1,32 @@
 {
   "files": {
-    "main.css": "/caliportfolio/static/css/main.be537fdd.css",
-    "main.js": "/caliportfolio/static/js/main.cbe3fbca.js",
+    "main.css": "/caliportfolio/static/css/main.cca9abc9.css",
+    "main.js": "/caliportfolio/static/js/main.d82ceaa8.js",
     "static/js/453.dc892088.chunk.js": "/caliportfolio/static/js/453.dc892088.chunk.js",
-    "static/media/mobile.png": "/caliportfolio/static/media/mobile.f040fda40464f282c44e.png",
-    "static/media/data.png": "/caliportfolio/static/media/data.480b28ce918fa0439997.png",
     "static/media/saca.png": "/caliportfolio/static/media/saca.3a1f9ef838863a90497e.png",
-    "static/media/web.png": "/caliportfolio/static/media/web.7bb5ca1ed7ec819f0d31.png",
-    "static/media/UI.png": "/caliportfolio/static/media/UI.c17b27f6a7808a19d7b0.png",
-    "static/media/AI.png": "/caliportfolio/static/media/AI.32c00602f16166c679e0.png",
     "static/media/citylytics.png": "/caliportfolio/static/media/citylytics.465fa854e497cad1753d.png",
-    "static/media/herb.png": "/caliportfolio/static/media/herb.c9314d96e1c23aa52136.png",
+    "static/media/nexstaypms.jpg": "/caliportfolio/static/media/nexstaypms.db32dd4df6f05f7056da.jpg",
+    "static/media/herblens.png": "/caliportfolio/static/media/herblens.44438a851493a072dd7d.png",
     "static/media/cip1.png": "/caliportfolio/static/media/cip1.16ca914b2f23b17ba2a3.png",
     "static/media/ebay.png": "/caliportfolio/static/media/ebay.1e454ad080e6c1fcd757.png",
     "static/media/cip2.png": "/caliportfolio/static/media/cip2.c33e88cdcd3d9fbf6524.png",
     "static/media/sanet.png": "/caliportfolio/static/media/sanet.199c0c2154fcca6ab803.png",
+    "static/media/cobrapparel.jpg": "/caliportfolio/static/media/cobrapparel.77b070cec893eace22d6.jpg",
     "static/media/rice.png": "/caliportfolio/static/media/rice.0ad4d076b12abc3af9a2.png",
+    "static/media/cpapassist.jpg": "/caliportfolio/static/media/cpapassist.c8f2c05f289fc3855c25.jpg",
+    "static/media/airo.jpg": "/caliportfolio/static/media/airo.5ba05349b567ca399302.jpg",
     "static/media/contact.png": "/caliportfolio/static/media/contact.c3ff5a655aee18eab6c6.png",
+    "static/media/cobrashop.jpg": "/caliportfolio/static/media/cobrashop.ed11fb9265bee570332d.jpg",
+    "static/media/nexplus.jpg": "/caliportfolio/static/media/nexplus.7633df9a872c357b12ad.jpg",
     "static/media/risk.png": "/caliportfolio/static/media/risk.2cf605696e06d553bae3.png",
-    "static/media/whatsapp.png": "/caliportfolio/static/media/whatsapp.965d92ce0d9f486938b6.png",
     "static/media/mark.jpg": "/caliportfolio/static/media/mark.52c824d47ef662c35067.jpg",
-    "static/media/facebook.png": "/caliportfolio/static/media/facebook.49e67d43221b6bb1aa86.png",
-    "static/media/linkedin.png": "/caliportfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "index.html": "/caliportfolio/index.html",
-    "main.be537fdd.css.map": "/caliportfolio/static/css/main.be537fdd.css.map",
-    "main.cbe3fbca.js.map": "/caliportfolio/static/js/main.cbe3fbca.js.map",
+    "main.cca9abc9.css.map": "/caliportfolio/static/css/main.cca9abc9.css.map",
+    "main.d82ceaa8.js.map": "/caliportfolio/static/js/main.d82ceaa8.js.map",
     "453.dc892088.chunk.js.map": "/caliportfolio/static/js/453.dc892088.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be537fdd.css",
-    "static/js/main.cbe3fbca.js"
+    "static/css/main.cca9abc9.css",
+    "static/js/main.d82ceaa8.js"
   ]
 }
