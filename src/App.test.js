@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+beforeAll(() => {
+  window.IntersectionObserver = class { observe() {} disconnect() {} unobserve() {} };
+  window.matchMedia = () => ({ matches: false, addListener() {}, removeListener() {} });
+});
+
+test('renders the portfolio with projects', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: /i automate the busywork/i })).toBeInTheDocument();
+  expect(screen.getByText('NexStay PMS')).toBeInTheDocument();
 });
