@@ -36,7 +36,7 @@ export const profile = {
 export const stack = [
   'Laravel', 'PHP', 'React', 'TypeScript', 'Inertia', 'NestJS', 'Flutter', 'MySQL', 'PostgreSQL',
   'AWS EC2', 'AWS RDS', 'AWS S3', 'AWS SES', 'CloudFront', 'CloudWatch', 'Systems Manager', 'Amazon Bedrock',
-  'GitHub Actions', 'Nginx', 'Docker', 'Shopify', 'WordPress', 'Gemini', 'OAuth2 / Passport', 'Power BI', 'Figma',
+  'Claude Code', 'Codex', 'GitHub Actions', 'Nginx', 'Docker', 'Shopify', 'WordPress', 'Gemini', 'OAuth2 / Passport', 'Power BI', 'Figma',
 ]
 
 // What a client can hire me for.
@@ -54,7 +54,7 @@ export const services = [
   { title: 'Websites and online stores', line: 'Shopify, WordPress and WooCommerce. Built, launched and looked after.' },
   { title: 'Custom web apps', line: 'Checkouts, portals, dashboards and integrations in Laravel and React.' },
   { title: 'Cloud and DevOps on AWS', line: 'Servers, databases, email and safe one-step deployments.' },
-  { title: 'Automations and AI', line: 'Reports, payments and AI assistants that run without manual work.' },
+  { title: 'Automations and AI', line: 'Reports, payments and AI assistants that run without manual work. Built faster with Claude Code and Codex.' },
 ]
 
 // Results: each case is a real piece of shipped work. `metric` states a fact about what was built.
@@ -78,7 +78,7 @@ export const impact = [
     problem:
       'Growing output normally means hiring more people for discovery, design, development, QA and documentation.',
     built:
-      'A workflow where role-based AI agents take a project through discovery, design, development, QA, documentation and acceptance, handing real files to each other. Failed QA sends the work back for a repair and retest. Every command and output is recorded so a person can review and accept it.',
+      'A workflow where role-based AI agents, powered by Codex, take a project through discovery, design, development, QA, documentation and acceptance, handing real files to each other. Failed QA sends the work back for a repair and retest. Every command and output is recorded so a person can review and accept it. Day to day I use Claude Code and Codex as AI pair programmers for coding, reviews and automation scripts.',
     metric: { big: '6 stages', label: 'run by AI agents, reviewed by a person' },
   },
   {
